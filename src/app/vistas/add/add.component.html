@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+    <form [formGroup]="newDate" class="container" (ngSubmit)="saveCustomer()" class="row g-3">
+        <div class="col-12">
+          <label class="form-label">Nombre de usuario</label>
+          <input type="text" class="form-control" formControlName="UserName" id="UserName" placeholder="Juan Gabriel">
+        </div>
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Fecha</label>
+          <input class="form-control" formControlName="Date" type="date" />
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Hora entrada</label>
+          <input class="form-control" formControlName="PunchIn" type="time" />
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Hora salida</label>
+          <input class="form-control" formControlName="PunchOut" type="time" />
+        </div>
+        <div class="col-md-2">
+        <button type="submit" class="btn btn-primary mb-2">Crear</button>
+    </div>
+      </form>
+    </div>
+    </div>
+    
